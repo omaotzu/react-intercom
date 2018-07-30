@@ -45,6 +45,7 @@ export default class Intercom extends Component {
         s = d.createElement('script');
         s.async = 1;
         s.src = 'https://widget.intercom.io/widget/' + id;
+        console.log(d.head);
         d.head.appendChild(s);
       })(window, document, appID);
     }
